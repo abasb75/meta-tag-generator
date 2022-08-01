@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meta Tag Generator</title>
+
+    <link rel="stylesheet" href="icon-font/style.css">
+    <link rel="stylesheet" type="text/css" href="css/ba_css_v1.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+    <div id="root">
+        <div class="containrt-full">
+            <div class="container-1280 header">
+                <h1>META TAG GENERATOR</h1>
+                <p>CREATE FREE ALL META TAG YOU NEED FOR YOUR WEBSITE</p>
+            </div>
+        </div>
+        <div id="inputs" class="container-1280">
+            <div class="animated_input">
+                <label class="main_label">Your Page Tilile</label>
+                <label class="subtitle_label">Character 0/70</label>
+                <textarea id="title" name="title" type="text" maxlength="70" placeholder="max-lenght : 70 character"></textarea>
+            </div>
+            <div class="animated_input">
+                <label class="main_label">Your Page URL</label>
+                <label class="subtitle_label"></label>
+                <textarea id="url" name="url" type="text"  placeholder="Page Permalink"></textarea>
+            </div>
+            <div class="animated_input">
+                <label class="main_label">Your Page Description</label>
+                <label class="subtitle_label">Character 0/150</label>
+                <textarea id="description" name="description" type="text" maxlength="150" placeholder="max-lenght: 150 character"></textarea>
+            </div>
+            <div class="animated_input">
+                <label class="main_label">Your Page Keyword</label>
+                <label class="subtitle_label"></label>
+                <textarea id="keyword" name="keyword" type="text" maxlength="300" placeholder="Keyword 1, Keyword 2, ..."></textarea>
+            </div>
+            <div class="animated_input">
+                <label class="main_label">Your Page Thumbnail Image</label>
+                <label class="subtitle_label"></label>
+                <textarea id="image" name="image" type="text"  placeholder="image url ..."></textarea>
+            </div>
+            <div class="animated_input">
+                <label class="main_label">Your Page Auther Name , Email</label>
+                <label class="subtitle_label"></label>
+                <textarea id="auther" name="auther" type="text"  placeholder="Auther , email"></textarea>
+            </div>
+            <div class="check-group">
+                <div class="check_input">
+                    <input id="robot" name="auther" type="checkbox"  placeholder="Auther , email">
+                    <label for="robot" class="sq icon-check"></label>
+                    <label for="robot" class="title">robot don't index my website</label>
+                </div>
+                <div class="check_input">
+                    <input id="robot_link" name="auther" type="checkbox"  placeholder="Auther , email">
+                    <label for="robot_link" class="sq icon-check"></label>
+                    <label for="robot_link" class="title">robot don't folow my website link</label>
+                </div>
+                <div class="check_input">
+                    <input id="responsive" name="auther" type="checkbox"  placeholder="Auther , email">
+                    <label for="responsive" class="sq icon-check"></label>
+                    <label for="responsive" class="title">My Page is not responsive</label>
+                </div>
+            </div>
+            <div class="check-group">
+                <div class="field">
+                    <div><span>Robots Revisit Your Page After </span><input type="text" placeholder="7" id="revisit" maxlength="5"><span> Days</span></div>
+                </div>
+
+            </div>
+            <div class="buttonHolder">
+                <button id="generate_meta">Generate Meta Tags</button>
+            </div>
+        </div>
+        <div id="results" class="container-1280">
+            <span>Meta Result Result</span>
+            <textarea id="result" disabled>
+
+            </textarea>
+            <div class="buttonHolder">
+                <button id="copy" class="icon-copy">   COPY</button>
+            </div>
+        </div>
+        <div class="containrt-full footer">
+            <a href="https://abasbagheri.ir">Create by Abbas Bagheri</a>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
